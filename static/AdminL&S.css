@@ -7,7 +7,7 @@
 
 body {
   height: 100vh;
-  background: linear-gradient(135deg,#141e30,#243b55);
+  background: linear-gradient(135deg, #000000, #1a1a1a); /* black gradient */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -20,21 +20,21 @@ body {
 }
 
 .admin-card {
-  background: #0d1b2a;
+  background: #ffffff; /* white card */
   padding: 40px;
   width: 350px;
   border-radius: 15px;
   text-align: center;
-  box-shadow: 0 0 30px rgba(0,0,0,0.5);
+  box-shadow: 0 0 30px rgba(0,0,0,0.3);
 }
 
 .admin-card h2 {
-  color: #00c6ff;
+  color: #e50914; /* red heading */
   margin-bottom: 5px;
 }
 
 .admin-card p {
-  color: #aaa;
+  color: #333; /* dark text */
   font-size: 13px;
   margin-bottom: 25px;
 }
@@ -43,42 +43,48 @@ body {
   width: 100%;
   padding: 12px;
   margin-bottom: 15px;
-  border: none;
+  border: 1px solid #ccc;
   border-radius: 6px;
   outline: none;
+  background: #f5f5f5; /* light input */
+  color: #000;
 }
 
 .admin-card button {
   width: 100%;
   padding: 12px;
-  background: #00c6ff;
+  background: #87ceeb; /* sky blue button */
   border: none;
   border-radius: 6px;
   font-weight: bold;
   cursor: pointer;
+  color: #000; /* black text */
 }
 
 .admin-card button:hover {
-  background: #00aaff;
+  background: #5bbce6; /* darker sky blue */
 }
 
 .error {
-  color: red;
+  color: #e50914; /* red error text */
   font-size: 13px;
   margin-top: 10px;
   display: block;
 }
+
 .switch {
   margin-top: 15px;
   font-size: 13px;
-  color: #aaa;
+  color: #333; /* dark text */
 }
 
 .switch span {
-  color: #00c6ff;
+  color: #87ceeb; /* sky blue link */
   cursor: pointer;
   font-weight: bold;
 }
+
 .switch span:hover {
   text-decoration: underline;
+  color: #e50914; /* red hover */
 }
