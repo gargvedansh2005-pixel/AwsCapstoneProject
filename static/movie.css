@@ -2,32 +2,32 @@ body {
   font-family: 'Segoe UI', Arial, sans-serif;
   margin: 0;
   padding: 20px;
-  background: #121212; /* Dark background */
-  color: #e0e0e0;      /* Light text */
+  background: #f9f9f9; /* Light background */
+  color: #333;         /* Dark text */
 }
 
 .movie-container {
   display: flex;
   align-items: flex-start;
-  background: #1e1e1e;
+  background: #ffffff; /* White card */
   padding: 20px;
   border-radius: 10px;
-  box-shadow: 0 4px 15px rgba(0,0,0,0.6);
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1); /* Softer shadow */
 }
 
 .movie-poster {
   width: 200px;
   height: 300px;
-  border: 2px solid #333;
+  border: 2px solid #ccc; /* Light border */
   border-radius: 8px;
-  overflow: hidden; /* ensures image doesn’t spill out */
+  overflow: hidden;
 }
 
 .movie-poster img {
   width: 100%;
   height: 100%;
-  object-fit: cover;   /* scales image to fill box */
-  border-radius: 8px;  /* matches container rounding */
+  object-fit: cover;
+  border-radius: 8px;
 }
 
 .movie-description {
@@ -37,11 +37,11 @@ body {
 
 .booking-section {
   margin-top: 30px;
-  background: #1e1e1e;
+  background: #ffffff; /* White section */
   padding: 20px;
   border-radius: 10px;
-  box-shadow: 0 4px 15px rgba(0,0,0,0.6);
-  text-align: center; /* Center everything inside */
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+  text-align: center;
 }
 
 .select-row {
@@ -54,23 +54,23 @@ body {
 select {
   padding: 8px 12px;
   border-radius: 5px;
-  border: none;
-  background: #2a2a2a;
-  color: #e0e0e0;
+  border: 1px solid #ccc;
+  background: #f0f0f0; /* Light dropdown */
+  color: #333;
 }
 
 .seat-matrix {
   display: grid;
-  grid-template-columns: repeat(6, 100px); /* Bigger seats */
+  grid-template-columns: repeat(6, 100px);
   grid-gap: 20px;
-  justify-content: center; /* Center matrix */
+  justify-content: center;
   margin: 30px auto;
 }
 
 .seat {
   width: 100px;
   height: 60px;
-  background-color: #2a2a2a;
+  background-color: #f0f0f0; /* Light seat */
   display: flex;
   align-items: center;
   justify-content: center;
@@ -81,7 +81,7 @@ select {
 }
 
 .seat:hover {
-  background-color: #444;
+  background-color: #ddd; /* Hover light gray */
   transform: scale(1.05);
 }
 
@@ -92,7 +92,7 @@ select {
 
 button {
   padding: 12px 24px;
-  background: linear-gradient(135deg, #3f51b5, #1a237e);
+  background: linear-gradient(135deg, #e50914, #b20710); /* Red gradient for CTA */
   color: white;
   border: none;
   cursor: pointer;
@@ -103,5 +103,5 @@ button {
 }
 
 button:hover {
-  background: linear-gradient(135deg, #5c6bc0, #283593);
+  background: linear-gradient(135deg, #ff4d4d, #cc0000); /* Brighter red hover */
 }
