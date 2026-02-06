@@ -31,7 +31,7 @@ contact_table = dynamodb.Table('ContactForm')
 # SNS
 #=====================
 
-SNS_TOPIC_ARN = 'arn:aws:sns:us-east-1:604665149129:aws_capstone_topic'
+SNS_TOPIC_ARN = 'arn:aws:sns:us-east-1:495599749771:MovieHub'
 
 def send_notification(subject, message):
     """Helper function to publish a message to SNS topic"""
@@ -328,5 +328,6 @@ def delete_movie(movie_id):
 
 if __name__ == '__main__':
     app.run(debug=True)
+
 
 
